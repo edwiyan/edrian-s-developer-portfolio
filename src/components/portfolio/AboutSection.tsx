@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { GraduationCap, Briefcase, Code2, Zap } from "lucide-react";
+import avatar from '../images/profile.jpg'
 
 const AboutSection = () => {
   const ref = useRef(null);
@@ -10,8 +11,8 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: GraduationCap,
-      title: "Fresh Graduate",
-      description: "BS Information Technology",
+      title: "BS Information Technology",
+      description: "Bulacan Agricultural State College",
       delay: 0.2,
     },
     {
@@ -84,14 +85,14 @@ const AboutSection = () => {
                       backgroundSize: '30px 30px'
                     }}
                   />
-                  
                   {/* Avatar placeholder */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
-                      <div className="w-32 h-32 rounded-full bg-accent/10 border-2 border-accent/30 flex items-center justify-center mx-auto mb-4">
-                        <span className="font-display text-4xl font-bold text-gradient">ECR</span>
-                      </div>
-                      <p className="text-muted-foreground text-sm">Profile Photo</p>
+                      <img
+                          src={avatar}
+                          alt="Profile"
+                          className="w-full h-full object-cover "
+                        />
                     </div>
                   </div>
                 </div>

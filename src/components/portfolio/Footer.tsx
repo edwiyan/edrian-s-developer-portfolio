@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Heart, Globe } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Footer = () => {
@@ -6,7 +6,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Globe, href: "https://www.onlinejobs.ph/jobseekers/info/4695271", label: "onlinejobs.ph" },
     { icon: Mail, href: "mailto:edrian.reyes@email.com", label: "Email" },
   ];
 
@@ -80,9 +80,6 @@ const Footer = () => {
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
             © {currentYear} Edrian Christian C. Reyes. All rights reserved.
-          </p>
-          <p className="text-muted-foreground text-sm flex items-center gap-1.5">
-            Made with <Heart size={14} className="text-accent fill-accent" /> in Philippines
           </p>
         </div>
       </div>

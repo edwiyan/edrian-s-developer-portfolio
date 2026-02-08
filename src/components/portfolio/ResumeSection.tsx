@@ -19,16 +19,26 @@ const education = [
   {
     degree: "Bachelor of Science in Information Technology",
     school: "Bulacan Agricultural State College",
-    year: "2020 - 2024",
+    year: "2021 - 2025",
     description: "Graduated with focus on web development and software engineering.",
   },
+   {
+    degree: "San Miguel National Highschool",
+    school: "San Miguel Bulacan",
+    year: "2014 - 2020",
+  },
+  {
+    degree: "San Miguel South Central Elementary School",
+    school: "San Miguel Bulacan",
+    year: "2008 - 2014",
+  }
 ];
 
 const workExperience = [
   {
     title: "Front-End Developer",
     company: "RBS Software Solutions",
-    period: "2024 - Present",
+    period: "2025 - 2026",
     responsibilities: [
       "Develop and maintain responsive web applications using React.js",
       "Implement UI components with Tailwind CSS and Bootstrap",
@@ -39,7 +49,7 @@ const workExperience = [
   {
     title: "IT Support Staff",
     company: "Bulacan Agricultural State College - MIS Office",
-    period: "2024 (2 months)",
+    period: "2025 (2 months)",
     responsibilities: [
       "Provided technical support for computer hardware and software",
       "Assisted with network troubleshooting and maintenance",
@@ -48,18 +58,18 @@ const workExperience = [
   },
 ];
 
-const certifications = [
-  {
-    name: "Responsive Web Design",
-    issuer: "freeCodeCamp",
-    year: "2023",
-  },
-  {
-    name: "JavaScript Algorithms and Data Structures",
-    issuer: "freeCodeCamp",
-    year: "2023",
-  },
-];
+// const certifications = [
+//   {
+//     name: "Responsive Web Design",
+//     issuer: "freeCodeCamp",
+//     year: "2023",
+//   },
+//   {
+//     name: "JavaScript Algorithms and Data Structures",
+//     issuer: "freeCodeCamp",
+//     year: "2023",
+//   },
+// ];
 
 // ==========================================
 // END OF EDITABLE DATA
@@ -105,7 +115,14 @@ const ResumeSection = () => {
             className="btn-primary inline-flex"
           >
             <Download size={18} />
-            Download CV
+             <a
+                href="https://drive.google.com/uc?export=download&id=1vcA9qBdM4eW8iPPK0Ay2IY4Vpz5zgW6B"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Download CV
+            </a>
           </motion.a>
         </motion.div>
 
@@ -184,7 +201,7 @@ const ResumeSection = () => {
           </motion.div>
         </div>
 
-        {/* Certifications */}
+        {/* Certifications
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -221,7 +238,7 @@ const ResumeSection = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

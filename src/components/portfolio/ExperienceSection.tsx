@@ -8,7 +8,7 @@ const experiences = [
     title: "Front-End Developer",
     company: "RBS Software Solutions",
     location: "Philippines",
-    period: "2024 - Present",
+    period: "2025 - 2026",
     description:
       "Developing and maintaining front-end components using React.js. Building responsive and user-friendly interfaces with HTML, CSS, Bootstrap, and Tailwind CSS. Collaborating with the team to deliver quality software solutions.",
     isCurrent: true,
@@ -18,11 +18,11 @@ const experiences = [
     title: "IT Support Staff",
     company: "Bulacan Agricultural State College",
     location: "MIS Office",
-    period: "2024 (2 months)",
+    period: "2025 (2 months)",
     description:
-      "Provided technical support and assisted with IT operations. Gained hands-on experience in troubleshooting and maintaining computer systems and networks.",
+      "Provided technical support and assisted with IT operations. Gained hands-on experience in troubleshooting and maintaining computer systems and networks, as well as in graphic designing projects, creating visual assets and design materials.",
     isCurrent: false,
-    highlights: ["Technical Support", "Troubleshooting", "Network Maintenance"],
+    highlights: ["Technical Support", "Troubleshooting", "Network Maintenance", "Graphic Designing"],
   },
 ];
 
