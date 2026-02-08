@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send, ArrowUpRight } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
@@ -12,15 +12,21 @@ const ContactSection = () => {
     email: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, this would send the form data to a backend
+    setIsSubmitting(true);
+    
+    // Simulate form submission
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
     toast({
       title: "Message sent!",
       description: "Thank you for reaching out. I'll get back to you soon!",
     });
     setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(false);
   };
 
   const contactInfo = [
@@ -45,65 +51,83 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 md:py-32">
+    <section id="contact" className="section-padding relative overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl" />
+
       <div className="container mx-auto px-6" ref={ref}>
+        {/* Section header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.8 }}
+          className="text-center mb-20"
         >
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+          <span className="inline-block px-4 py-1.5 bg-accent/10 border border-accent/20 rounded-full text-xs font-medium text-accent uppercase tracking-wider mb-6">
             Get In Touch
+          </span>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <span className="text-gradient-light">Let's Work Together</span>
           </h2>
-          <div className="w-20 h-1 bg-accent mx-auto rounded-full" />
-          <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? Feel free to reach out!
           </p>
         </motion.div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact Info */}
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: -40 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="lg:col-span-2 space-y-8"
             >
-              <h3 className="font-display text-2xl font-semibold text-primary mb-6">
-                Let's work together
-              </h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                I'm always open to discussing new projects, creative ideas, or
-                opportunities to be part of your vision. Let's create something
-                amazing together!
-              </p>
+              <div>
+                <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+                  Contact Information
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  I'm always open to discussing new projects, creative ideas, or
+                  opportunities to be part of your vision.
+                </p>
+              </div>
 
               <div className="space-y-4">
                 {contactInfo.map((item, index) => (
                   <motion.div
                     key={item.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
-                    className="flex items-center gap-4"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={isInView ? { opacity: 1, x: 0 } : {}}
+                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                    className="group"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
-                      <item.icon className="w-5 h-5 text-accent" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">{item.label}</p>
-                      {item.href ? (
-                        <a
-                          href={item.href}
-                          className="font-medium text-primary hover:text-accent transition-colors"
-                        >
-                          {item.value}
-                        </a>
-                      ) : (
-                        <p className="font-medium text-primary">{item.value}</p>
-                      )}
-                    </div>
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        className="flex items-center gap-4 p-4 rounded-2xl bg-secondary/50 border border-border hover:border-accent/30 transition-all duration-300"
+                      >
+                        <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                          <item.icon className="w-5 h-5 text-accent" />
+                        </div>
+                        <div className="flex-1">
+                          <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{item.label}</p>
+                          <p className="font-medium text-foreground group-hover:text-accent transition-colors">{item.value}</p>
+                        </div>
+                        <ArrowUpRight size={18} className="text-muted-foreground group-hover:text-accent transition-colors" />
+                      </a>
+                    ) : (
+                      <div className="flex items-center gap-4 p-4 rounded-2xl bg-secondary/50 border border-border">
+                        <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
+                          <item.icon className="w-5 h-5 text-accent" />
+                        </div>
+                        <div>
+                          <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">{item.label}</p>
+                          <p className="font-medium text-foreground">{item.value}</p>
+                        </div>
+                      </div>
+                    )}
                   </motion.div>
                 ))}
               </div>
@@ -111,53 +135,56 @@ const ContactSection = () => {
 
             {/* Contact Form */}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
+              initial={{ opacity: 0, x: 40 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="lg:col-span-3"
             >
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-primary mb-2"
-                  >
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
-                    required
-                    className="w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-foreground"
-                    placeholder="John Doe"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-primary mb-2"
-                  >
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    value={formData.email}
-                    onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
-                    }
-                    required
-                    className="w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-foreground"
-                    placeholder="john@example.com"
-                  />
+              <form onSubmit={handleSubmit} className="card-dark p-8 space-y-6">
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-foreground mb-3"
+                    >
+                      Your Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      value={formData.name}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
+                      required
+                      className="w-full px-4 py-4 rounded-xl bg-secondary border border-border focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-foreground placeholder:text-muted-foreground"
+                      placeholder="John Doe"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-foreground mb-3"
+                    >
+                      Email Address
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      value={formData.email}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
+                      required
+                      className="w-full px-4 py-4 rounded-xl bg-secondary border border-border focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all text-foreground placeholder:text-muted-foreground"
+                      placeholder="john@example.com"
+                    />
+                  </div>
                 </div>
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-primary mb-2"
+                    className="block text-sm font-medium text-foreground mb-3"
                   >
                     Message
                   </label>
@@ -168,19 +195,29 @@ const ContactSection = () => {
                       setFormData({ ...formData, message: e.target.value })
                     }
                     required
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all resize-none text-foreground"
+                    rows={6}
+                    className="w-full px-4 py-4 rounded-xl bg-secondary border border-border focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all resize-none text-foreground placeholder:text-muted-foreground"
                     placeholder="Tell me about your project..."
                   />
                 </div>
                 <motion.button
                   type="submit"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="w-full bg-accent text-accent-foreground py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
+                  disabled={isSubmitting}
+                  whileHover={{ scale: 1.01 }}
+                  whileTap={{ scale: 0.99 }}
+                  className="btn-primary w-full justify-center disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  <Send size={18} />
-                  Send Message
+                  {isSubmitting ? (
+                    <>
+                      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send size={18} />
+                      Send Message
+                    </>
+                  )}
                 </motion.button>
               </form>
             </motion.div>
