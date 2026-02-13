@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "../images/logo2.png";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -50,14 +51,18 @@ const Header = () => {
       }`}
     >
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <motion.a
-          href="#home"
-          className="font-display text-2xl font-bold tracking-tight"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <span className="text-gradient">ECR</span>
-        </motion.a>
+          <motion.a
+            href="#home"
+            className="font-display text-2xl font-bold tracking-tight"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <img 
+              src={logo} 
+              alt="ER Logo" 
+              className="h-12 w-12"
+            />
+          </motion.a>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-1">

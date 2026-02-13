@@ -39,7 +39,7 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -78,19 +78,21 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-4">
-                  {project.liveUrl && (
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <ExternalLink size={16} />
-                      Live Demo
-                    </a>
-                  )}
-                </div>
+                {project.liveUrl && (
+                  <div className="flex gap-4">
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <ExternalLink size={16} />
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           ))}
