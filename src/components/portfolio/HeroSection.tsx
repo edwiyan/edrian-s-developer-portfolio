@@ -100,7 +100,7 @@ const HeroSection = () => {
             {[
               {
                 icon: Github,
-                href: "https://github.com",
+                href: "https://github.com/edwiyan",
                 label: "GitHub",
               },
               {

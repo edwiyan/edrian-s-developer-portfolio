@@ -77,7 +77,8 @@ const ExperienceSection = () => {
                   initial={{ scale: 0 }}
                   animate={isInView ? { scale: 1 } : {}}
                   transition={{ duration: 0.4, delay: 0.3 + index * 0.2 }}
-                  className={`absolute left-8 md:left-1/2 w-4 h-4 rounded-full -translate-x-1/2 hidden sm:block ${
+                  style={{ translateX: '-50%' }} // Add this line
+                  className={`absolute left-8 md:left-1/2 w-4 h-4 rounded-full hidden sm:block ${
                     exp.isCurrent ? "bg-accent glow-accent" : "bg-muted border-2 border-border"
                   }`}
                 />
