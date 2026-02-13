@@ -13,7 +13,7 @@ const ProjectsSection = () => {
     },
     {
       title: "928 Credit Concept Lending Management System",
-      description: "Another project showcasing your skills. Highlight the key features and your role in the development.",
+      description: "A lending management system for 928 Credit Concept that streamlines loan processing, payment tracking, and customer management.",
       image: capstone,
       technologies: ["PHP", "Bootstrap", "MySQL"],
       liveUrl: "",
