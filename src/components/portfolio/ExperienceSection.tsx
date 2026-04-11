@@ -5,6 +5,16 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 
 const experiences = [
   {
+  title: "Claude Code Expert",
+  company: "Center court",
+  location: "Cleveland, City of Ohio, USA",
+  period: "2026",
+  description:
+    "Worked in a remote development environment focusing on debugging and optimizing web applications. Improved UI/UX for cleaner and more user-friendly interfaces, scraped and structured data from ticket-selling platforms, and analyzed system behaviors including bot detection mechanisms. Performed advanced tasks such as application decompilation to access tokens and SDKs, and delivered daily detailed reports on progress and findings.",
+  isCurrent: false,
+  highlights: ["Debugging", "UI/UX Improvement", "Web Scraping", "System Analysis", "AI-Assisted Development"],
+  },
+  {
     title: "Front-End Developer",
     company: "RBS Software Solutions",
     location: "Philippines",
