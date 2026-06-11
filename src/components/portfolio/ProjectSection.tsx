@@ -2,11 +2,12 @@ import { ExternalLink, Github, ArrowUpRight, Calendar, Code } from "lucide-react
 import { useState, useEffect } from "react";
 import nuevaEcija from "../images/nuevaecija.png";
 import capstone from "../images/928.png";
+import ailas from "../images/ailas.png";
 
 interface Project {
   title: string;
   description: string;
-  image: string;
+  image?: string;
   technologies: string[];
   liveUrl?: string;
   githubUrl?: string;
@@ -49,11 +50,30 @@ const ProjectsSection = () => {
       title: "928 Credit Concept Lending Management System",
       description: "Enterprise-level lending management system that streamlines loan processing, payment tracking, customer management, and automated reporting with advanced security features.",
       image: capstone,
-      technologies: ["PHP", "Bootstrap", "MySQL", "JavaScript"],
+      technologies: ["Python", "Tailwind", "React", "JavaScript"],
       liveUrl: "",
-      githubUrl: "", // Add if available
+      githubUrl: "",
       year: "2025",
       status: "completed",
+    },
+    {
+      title: "AILAS",
+      description: "An AI-powered platform designed to streamline intelligent workflows, leveraging machine learning to deliver smart, data-driven solutions for modern challenges.",
+      image: ailas,
+      technologies: ["React", "TypeScript", "Tailwind CSS", "AI/ML"],
+      liveUrl: "",
+      githubUrl: "",
+      year: "2026",
+      status: "in-progress",
+    },
+    {
+      title: "Sapatwosan",
+      description: "A full-featured footwear e-commerce and inventory management platform that simplifies browsing, ordering, and stock management for shoe retailers and customers alike.",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "MySQL"],
+      liveUrl: "",
+      githubUrl: "",
+      year: "2026",
+      status: "in-progress",
     },
   ];
 
@@ -110,12 +130,20 @@ const ProjectsSection = () => {
             >
               {/* Project Image Container */}
               <div className="relative h-64 sm:h-72 overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-primary/20 via-slate-800 to-slate-900 flex items-center justify-center">
+                    <span className="text-5xl font-bold text-primary/30 select-none">
+                      {project.title.charAt(0)}
+                    </span>
+                  </div>
+                )}
                 
                 {/* Gradient Overlay */}
                <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/30 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300" />

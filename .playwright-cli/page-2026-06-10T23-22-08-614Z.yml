@@ -1,0 +1,415 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - navigation [ref=e5]:
+        - link "ER Logo" [ref=e6] [cursor=pointer]:
+          - /url: "#home"
+          - img "ER Logo" [ref=e7]
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Home" [ref=e10] [cursor=pointer]:
+              - /url: "#home"
+              - text: Home
+          - listitem [ref=e12]:
+            - link "About" [ref=e13] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e14]:
+            - link "Skills" [ref=e15] [cursor=pointer]:
+              - /url: "#skills"
+          - listitem [ref=e16]:
+            - link "Experience" [ref=e17] [cursor=pointer]:
+              - /url: "#experience"
+          - listitem [ref=e18]:
+            - link "Projects" [ref=e19] [cursor=pointer]:
+              - /url: "#projects"
+          - listitem [ref=e20]:
+            - link "Resume" [ref=e21] [cursor=pointer]:
+              - /url: "#resume"
+          - listitem [ref=e22]:
+            - link "Contact" [ref=e23] [cursor=pointer]:
+              - /url: "#contact"
+          - listitem [ref=e24]:
+            - link "Hire Me" [ref=e25] [cursor=pointer]:
+              - /url: "#contact"
+    - main [ref=e26]:
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e36]:
+            - img [ref=e37]
+            - text: Front-End Developer
+          - heading "Hi, I'm Edrian Christian" [level=1] [ref=e39]:
+            - text: Hi, I'm
+            - text: Edrian Christian
+          - paragraph [ref=e40]: A passionate front-end developer specializing in building beautiful, responsive, and user-friendly web interfaces using React.js and modern CSS frameworks.
+          - generic [ref=e41]:
+            - link "Get In Touch" [ref=e42] [cursor=pointer]:
+              - /url: "#contact"
+            - link "View My Work" [ref=e43] [cursor=pointer]:
+              - /url: "#experience"
+          - generic [ref=e44]:
+            - generic [ref=e45]:
+              - link "GitHub" [ref=e46] [cursor=pointer]:
+                - /url: https://github.com/edwiyan
+                - img [ref=e47]
+              - generic: GitHub
+            - generic [ref=e50]:
+              - link "OnlineJobs" [ref=e51] [cursor=pointer]:
+                - /url: https://www.onlinejobs.ph/jobseekers/info/4695271
+                - img [ref=e52]
+              - generic: OnlineJobs
+            - generic [ref=e55]:
+              - link "Email" [ref=e56] [cursor=pointer]:
+                - /url: mailto:edrianreyes.basc@gmail.com
+                - img [ref=e57]
+              - generic: Email
+        - link "Scroll" [ref=e61] [cursor=pointer]:
+          - /url: "#about"
+          - generic [ref=e62]: Scroll
+          - img [ref=e63]
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - generic [ref=e71]: About Me
+          - heading "Who I Am" [level=2] [ref=e72]
+        - generic [ref=e75]:
+          - generic [ref=e77]:
+            - generic [ref=e81]:
+              - generic:
+                - img "Profile"
+            - generic:
+              - paragraph: "24"
+              - paragraph: Years Old
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - heading "Edrian Christian C. Reyes" [level=3] [ref=e84]
+              - paragraph [ref=e85]: Front-End Developer
+            - generic [ref=e86]:
+              - paragraph [ref=e87]: I'm a 24-year-old front-end developer and fresh graduate with a Bachelor of Science in Information Technology. I was fortunate to be hired before graduation and now have 6 months of hands-on experience at a startup company.
+              - paragraph [ref=e88]: I specialize in building responsive and user-friendly interfaces using HTML, CSS, and React.js. I'm also experienced with Bootstrap and Tailwind CSS, and I'm always eager to learn new technologies and improve my craft.
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - img [ref=e91]
+                - paragraph [ref=e94]: BS Information Technology
+                - paragraph [ref=e95]: Bulacan Agricultural State College
+              - generic [ref=e96]:
+                - img [ref=e97]
+                - paragraph [ref=e100]: 6+ Months
+                - paragraph [ref=e101]: Professional Experience
+              - generic [ref=e102]:
+                - img [ref=e103]
+                - paragraph [ref=e107]: React.js
+                - paragraph [ref=e108]: Specialization
+              - generic [ref=e109]:
+                - img [ref=e110]
+                - paragraph [ref=e112]: Modern Stack
+                - paragraph [ref=e113]: Tailwind & Bootstrap
+      - generic [ref=e118]:
+        - generic [ref=e119]:
+          - generic [ref=e120]: My Expertise
+          - heading "Skills & Technologies" [level=2] [ref=e121]
+          - paragraph [ref=e122]: Here are the technologies I work with to build modern, responsive web applications.
+        - generic [ref=e123]:
+          - generic [ref=e125]:
+            - img [ref=e130]
+            - heading "HTML" [level=3] [ref=e132]
+            - generic [ref=e134]:
+              - generic [ref=e135]: Proficiency
+              - generic [ref=e136]: 90%
+          - generic [ref=e139]:
+            - img [ref=e144]
+            - heading "CSS" [level=3] [ref=e146]
+            - generic [ref=e148]:
+              - generic [ref=e149]: Proficiency
+              - generic [ref=e150]: 85%
+          - generic [ref=e153]:
+            - img [ref=e158]
+            - heading "JavaScript" [level=3] [ref=e160]
+            - generic [ref=e162]:
+              - generic [ref=e163]: Proficiency
+              - generic [ref=e164]: 80%
+          - generic [ref=e167]:
+            - img [ref=e172]
+            - heading "React.js" [level=3] [ref=e174]
+            - generic [ref=e176]:
+              - generic [ref=e177]: Proficiency
+              - generic [ref=e178]: 85%
+          - generic [ref=e181]:
+            - img [ref=e186]
+            - heading "Bootstrap" [level=3] [ref=e188]
+            - generic [ref=e190]:
+              - generic [ref=e191]: Proficiency
+              - generic [ref=e192]: 80%
+          - generic [ref=e195]:
+            - img [ref=e200]
+            - heading "Tailwind CSS" [level=3] [ref=e202]
+            - generic [ref=e204]:
+              - generic [ref=e205]: Proficiency
+              - generic [ref=e206]: 85%
+      - generic [ref=e211]:
+        - generic [ref=e212]:
+          - generic [ref=e213]: Career Path
+          - heading "Work Experience" [level=2] [ref=e214]
+        - generic [ref=e217]:
+          - generic [ref=e220]:
+            - heading "Claude Code Expert" [level=3] [ref=e221]
+            - generic [ref=e222]:
+              - generic [ref=e223]:
+                - img [ref=e224]
+                - generic [ref=e227]: Center court
+              - generic [ref=e228]:
+                - img [ref=e229]
+                - generic [ref=e232]: Cleveland, City of Ohio, USA
+              - generic [ref=e233]:
+                - img [ref=e234]
+                - generic [ref=e236]: "2026"
+            - paragraph [ref=e237]: Worked in a remote development environment focusing on debugging and optimizing web applications. Improved UI/UX for cleaner and more user-friendly interfaces, scraped and structured data from ticket-selling platforms, and analyzed system behaviors including bot detection mechanisms. Performed advanced tasks such as application decompilation to access tokens and SDKs, and delivered daily detailed reports on progress and findings.
+            - generic [ref=e238]:
+              - generic [ref=e239]: Debugging
+              - generic [ref=e240]: UI/UX Improvement
+              - generic [ref=e241]: Web Scraping
+              - generic [ref=e242]: System Analysis
+              - generic [ref=e243]: AI-Assisted Development
+          - generic [ref=e245]:
+            - generic [ref=e246]: Current Position
+            - heading "Front-End Developer" [level=3] [ref=e248]
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - img [ref=e251]
+                - generic [ref=e254]: RBS Software Solutions
+              - generic [ref=e255]:
+                - img [ref=e256]
+                - generic [ref=e259]: Philippines
+              - generic [ref=e260]:
+                - img [ref=e261]
+                - generic [ref=e263]: 2025 - 2026
+            - paragraph [ref=e264]: Developing and maintaining front-end components using React.js. Building responsive and user-friendly interfaces with HTML, CSS, Bootstrap, and Tailwind CSS. Collaborating with the team to deliver quality software solutions.
+            - generic [ref=e265]:
+              - generic [ref=e266]: React.js
+              - generic [ref=e267]: Tailwind CSS
+              - generic [ref=e268]: Bootstrap
+              - generic [ref=e269]: API Integration
+          - generic [ref=e271]:
+            - heading "IT Support Staff" [level=3] [ref=e272]
+            - generic [ref=e273]:
+              - generic [ref=e274]:
+                - img [ref=e275]
+                - generic [ref=e278]: Bulacan Agricultural State College
+              - generic [ref=e279]:
+                - img [ref=e280]
+                - generic [ref=e283]: MIS Office
+              - generic [ref=e284]:
+                - img [ref=e285]
+                - generic [ref=e287]: 2025 (2 months)
+            - paragraph [ref=e288]: Provided technical support and assisted with IT operations. Gained hands-on experience in troubleshooting and maintaining computer systems and networks, as well as in graphic designing projects, creating visual assets and design materials.
+            - generic [ref=e289]:
+              - generic [ref=e290]: Technical Support
+              - generic [ref=e291]: Troubleshooting
+              - generic [ref=e292]: Network Maintenance
+              - generic [ref=e293]: Graphic Designing
+      - generic [ref=e295]:
+        - generic [ref=e296]:
+          - generic [ref=e297]:
+            - img [ref=e298]
+            - text: Featured Work
+          - heading "My Projects" [level=2] [ref=e301]
+          - paragraph [ref=e302]: Explore my latest projects that showcase modern development practices, user-centered design, and scalable architecture solutions.
+        - generic [ref=e303]:
+          - generic [ref=e304]:
+            - generic [ref=e305]:
+              - img "Nueva Ecija Explorer" [ref=e306]
+              - generic [ref=e308]: Completed
+              - generic [ref=e309]:
+                - img [ref=e310]
+                - text: "2025"
+              - generic [ref=e312]:
+                - link "View Nueva Ecija Explorer live demo" [ref=e313] [cursor=pointer]:
+                  - /url: https://nuevaecijaexplorer.com/
+                  - img [ref=e314]
+                  - text: Live Demo
+                - link "View Nueva Ecija Explorer source code" [ref=e318] [cursor=pointer]:
+                  - /url: https://github.com/edwiyan/edrian-s-developer-portfolio
+                  - img [ref=e319]
+                  - text: Code
+            - generic [ref=e322]:
+              - generic [ref=e323]:
+                - heading "Nueva Ecija Explorer" [level=3] [ref=e324]
+                - paragraph [ref=e325]: A comprehensive tourism web platform showcasing Nueva Ecija's hidden gems, featuring interactive guides to tourist spots, local delicacies, and travel resources with real-time updates.
+              - generic [ref=e326]:
+                - generic [ref=e327]: React
+                - generic [ref=e328]: TypeScript
+                - generic [ref=e329]: Tailwind CSS
+                - generic [ref=e330]: Vite
+              - generic [ref=e332]:
+                - link "View Nueva Ecija Explorer live demo" [ref=e333] [cursor=pointer]:
+                  - /url: https://nuevaecijaexplorer.com/
+                  - img [ref=e334]
+                  - text: View Project
+                  - img [ref=e338]
+                - link "View Nueva Ecija Explorer source code" [ref=e341] [cursor=pointer]:
+                  - /url: https://github.com/edwiyan/edrian-s-developer-portfolio
+                  - img [ref=e342]
+                  - text: Source
+          - generic [ref=e345]:
+            - generic [ref=e346]:
+              - img "928 Credit Concept Lending Management System" [ref=e347]
+              - generic [ref=e349]: Completed
+              - generic [ref=e350]:
+                - img [ref=e351]
+                - text: "2025"
+            - generic [ref=e354]:
+              - generic [ref=e355]:
+                - heading "928 Credit Concept Lending Management System" [level=3] [ref=e356]
+                - paragraph [ref=e357]: Enterprise-level lending management system that streamlines loan processing, payment tracking, customer management, and automated reporting with advanced security features.
+              - generic [ref=e358]:
+                - generic [ref=e359]: PHP
+                - generic [ref=e360]: Bootstrap
+                - generic [ref=e361]: MySQL
+                - generic [ref=e362]: JavaScript
+              - generic [ref=e365]:
+                - img [ref=e366]
+                - text: Private Project
+        - generic [ref=e370]:
+          - paragraph [ref=e371]: Interested in working together?
+          - link "Let's Connect" [ref=e372] [cursor=pointer]:
+            - /url: "#contact"
+            - text: Let's Connect
+            - img [ref=e373]
+      - generic [ref=e380]:
+        - generic [ref=e381]:
+          - generic [ref=e382]: My Background
+          - heading "Resume" [level=2] [ref=e383]
+          - paragraph [ref=e384]: A summary of my education, experience, and certifications.
+          - link "Download CV" [ref=e385] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e386]
+            - link "Download CV" [ref=e389]:
+              - /url: https://drive.google.com/uc?export=download&id=1vcA9qBdM4eW8iPPK0Ay2IY4Vpz5zgW6B
+        - generic [ref=e390]:
+          - generic [ref=e391]:
+            - generic [ref=e392]:
+              - img [ref=e394]
+              - heading "Education" [level=3] [ref=e397]
+            - generic [ref=e398]:
+              - generic [ref=e399]:
+                - heading "Bachelor of Science in Information Technology" [level=4] [ref=e400]
+                - paragraph [ref=e401]: Bulacan Agricultural State College
+                - paragraph [ref=e402]: 2021 - 2025
+                - paragraph [ref=e403]: Graduated with focus on web development and software engineering.
+              - generic [ref=e404]:
+                - heading "San Miguel National Highschool" [level=4] [ref=e405]
+                - paragraph [ref=e406]: San Miguel Bulacan
+                - paragraph [ref=e407]: 2014 - 2020
+                - paragraph
+              - generic [ref=e408]:
+                - heading "San Miguel South Central Elementary School" [level=4] [ref=e409]
+                - paragraph [ref=e410]: San Miguel Bulacan
+                - paragraph [ref=e411]: 2008 - 2014
+                - paragraph
+          - generic [ref=e412]:
+            - generic [ref=e413]:
+              - img [ref=e415]
+              - heading "Work Experience" [level=3] [ref=e418]
+            - generic [ref=e419]:
+              - generic [ref=e420]:
+                - heading "Front-End Developer" [level=4] [ref=e421]
+                - paragraph [ref=e422]: RBS Software Solutions
+                - paragraph [ref=e423]: 2025 - 2026
+                - list [ref=e424]:
+                  - listitem [ref=e425]:
+                    - generic [ref=e426]: ›
+                    - text: Develop and maintain responsive web applications using React.js
+                  - listitem [ref=e427]:
+                    - generic [ref=e428]: ›
+                    - text: Implement UI components with Tailwind CSS and Bootstrap
+                  - listitem [ref=e429]:
+                    - generic [ref=e430]: ›
+                    - text: Collaborate with backend developers for API integration
+                  - listitem [ref=e431]:
+                    - generic [ref=e432]: ›
+                    - text: Participate in code reviews and agile development processes
+              - generic [ref=e433]:
+                - heading "IT Support Staff" [level=4] [ref=e434]
+                - paragraph [ref=e435]: Bulacan Agricultural State College - MIS Office
+                - paragraph [ref=e436]: 2025 (2 months)
+                - list [ref=e437]:
+                  - listitem [ref=e438]:
+                    - generic [ref=e439]: ›
+                    - text: Provided technical support for computer hardware and software
+                  - listitem [ref=e440]:
+                    - generic [ref=e441]: ›
+                    - text: Assisted with network troubleshooting and maintenance
+                  - listitem [ref=e442]:
+                    - generic [ref=e443]: ›
+                    - text: Managed inventory of IT equipment
+      - generic [ref=e447]:
+        - generic [ref=e448]:
+          - generic [ref=e449]: Get In Touch
+          - heading "Let's Work Together" [level=2] [ref=e450]
+          - paragraph [ref=e451]: Have a project in mind or want to collaborate? Feel free to reach out!
+        - generic [ref=e452]:
+          - generic [ref=e453]:
+            - heading "Contact Information" [level=3] [ref=e454]
+            - paragraph [ref=e455]: I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+          - generic [ref=e456]:
+            - link "Email edrianreyes.basc@gmail.com" [ref=e458] [cursor=pointer]:
+              - /url: mailto:edrianreyes.basc@gmail.com
+              - img [ref=e460]
+              - generic [ref=e463]:
+                - paragraph [ref=e464]: Email
+                - paragraph [ref=e465]: edrianreyes.basc@gmail.com
+              - img [ref=e466]
+            - link "Phone +63 963 366 1334" [ref=e470] [cursor=pointer]:
+              - /url: tel:+639633661334
+              - img [ref=e472]
+              - generic [ref=e474]:
+                - paragraph [ref=e475]: Phone
+                - paragraph [ref=e476]: +63 963 366 1334
+              - img [ref=e477]
+            - generic [ref=e481]:
+              - img [ref=e483]
+              - generic [ref=e486]:
+                - paragraph [ref=e487]: Location
+                - paragraph [ref=e488]: Bulacan, Philippines
+    - contentinfo [ref=e489]:
+      - generic [ref=e491]:
+        - generic [ref=e492]:
+          - generic [ref=e493]:
+            - link "ECR" [ref=e494] [cursor=pointer]:
+              - /url: "#home"
+            - paragraph [ref=e495]: Front-End Developer passionate about building beautiful, responsive, and user-friendly web experiences.
+          - generic [ref=e496]:
+            - heading "Quick Links" [level=4] [ref=e497]
+            - list [ref=e498]:
+              - listitem [ref=e499]:
+                - link "Home" [ref=e500] [cursor=pointer]:
+                  - /url: "#home"
+              - listitem [ref=e501]:
+                - link "About" [ref=e502] [cursor=pointer]:
+                  - /url: "#about"
+              - listitem [ref=e503]:
+                - link "Skills" [ref=e504] [cursor=pointer]:
+                  - /url: "#skills"
+              - listitem [ref=e505]:
+                - link "Experience" [ref=e506] [cursor=pointer]:
+                  - /url: "#experience"
+              - listitem [ref=e507]:
+                - link "Resume" [ref=e508] [cursor=pointer]:
+                  - /url: "#resume"
+              - listitem [ref=e509]:
+                - link "Contact" [ref=e510] [cursor=pointer]:
+                  - /url: "#contact"
+          - generic [ref=e511]:
+            - heading "Connect" [level=4] [ref=e512]
+            - generic [ref=e513]:
+              - link "GitHub" [ref=e514] [cursor=pointer]:
+                - /url: https://github.com
+                - img [ref=e515]
+              - link "onlinejobs.ph" [ref=e518] [cursor=pointer]:
+                - /url: https://www.onlinejobs.ph/jobseekers/info/4695271
+                - img [ref=e519]
+              - link "Email" [ref=e522] [cursor=pointer]:
+                - /url: mailto:edrian.reyes@email.com
+                - img [ref=e523]
+        - paragraph [ref=e527]: © 2026 Edrian Christian C. Reyes. All rights reserved.
