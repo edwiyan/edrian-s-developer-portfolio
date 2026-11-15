@@ -1,22 +1,29 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ mode }) => ({
-  base: "/edrian-s-developer-portfolio/", // <-- Add this for GitHub Pages
+export default defineConfig({
+  base: "/edrian-s-developer-portfolio/", // GitHub Pages sub-path
   server: {
     host: "::",
     port: 8080,
-    hmr: {
-      overlay: false,
-    },
   },
-  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+  plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));
+  build: {
+    chunkSizeWarningLimit: 1400,
+    rollupOptions: {
+      output: {
+        // three.js stays inside the lazily imported HeroScene chunk so it never blocks first paint.
+        manualChunks: {
+          gsap: ["gsap", "@gsap/react", "lenis"],
+        },
+      },
+    },
+  },
+});

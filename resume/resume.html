@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Edrian Christian C. Reyes - Full-Stack Developer Resume</title>
+<style>
+  /*
+    ATS-friendly one-page resume (US Letter). Source for public/resume.pdf; see resume/README.md.
+    Rules kept on purpose: single column, top-to-bottom reading order, standard section names,
+    standard font, real text bullets, no tables/columns/icons/images, consistent dates.
+  */
+  @page { size: Letter; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 8.5in; height: 11in; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    font-size: 10pt;
+    line-height: 1.34;
+    padding: 0.5in 0.55in 0.45in;
+  }
+  a { color: inherit; text-decoration: none; }
+  h1 { font-size: 20pt; font-weight: 700; letter-spacing: 0.01em; }
+  .headline { font-size: 10.5pt; font-weight: 700; margin-top: 2px; }
+  .contact { margin-top: 3px; font-size: 9pt; }
+  h2 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #111;
+    padding-bottom: 1px;
+    margin: 12px 0 5px;
+  }
+  .row { display: flex; justify-content: space-between; gap: 12px; }
+  .entry { margin-bottom: 7px; }
+  .title { font-weight: 700; }
+  .date { white-space: nowrap; font-weight: 700; }
+  .org { font-style: italic; }
+  ul { padding-left: 15px; margin-top: 1px; }
+  li { margin-bottom: 1px; }
+  .proj { margin-bottom: 3px; }
+  .tech { font-style: italic; }
+  .skills p { margin-bottom: 1.5px; }
+</style>
+</head>
+<body>
+  <h1>EDRIAN CHRISTIAN C. REYES</h1>
+  <p class="headline">Full-Stack Developer | Laravel, React, TypeScript, Python</p>
+  <p class="contact">
+    Bulacan, PH | +63 963 366 1334 | edrianreyes.basc@gmail.com |
+    github.com/edwiyan | edwiyan.github.io/edrian-s-developer-portfolio
+  </p>
+
+  <h2>Professional Summary</h2>
+  <p>
+    Full-stack web developer who has built and deployed 6 web systems for the Department of Education (DepEd) Schools Division
+    of Bulacan since July 2026, 3 of them live in production. Skilled in Laravel, PHP, React, TypeScript, Python, MySQL and
+    Microsoft Power Automate, owning each system from requirements and database design to deployment, QA and user training.
+  </p>
+
+  <h2>Work Experience</h2>
+
+  <div class="entry">
+    <div class="row">
+      <p><span class="title">Technical Assistant II (Full-Stack Developer)</span> | <span class="org">DepEd Schools Division of Bulacan, ICT Unit</span></p>
+      <span class="date">Jul 2026 - Present</span>
+    </div>
+    <ul>
+      <li>Developed 6 web applications replacing Excel- and paper-based processes for HR, supply, procurement and records.</li>
+      <li>Deployed 3 systems to bulacandeped.com.ph via cPanel, configuring domains, SSL, DNS and MySQL databases.</li>
+      <li>Built a Laravel/React inventory system issuing ICS/PAR forms and QR property cards for 515 schools.</li>
+      <li>Rebuilt the HR appointment tracker from VBA/Excel into a web app with a 7-stage workflow and email alerts.</li>
+      <li>Automated a Microsoft Teams coaching hub by linking Microsoft Forms to Lists with Power Automate.</li>
+      <li>Ran QA reviews, wrote user guides and released updates to live systems with zero downtime or data loss.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <p><span class="title">Claude Code Developer (Contract, Remote)</span> | <span class="org">Center Court</span>, Cleveland, Ohio, USA</p>
+      <span class="date">2026</span>
+    </div>
+    <ul>
+      <li>Debugged and optimized web applications and improved UI/UX using AI-assisted development with Claude Code.</li>
+      <li>Built data pipelines for ticketing platforms, analyzed third-party systems and delivered daily reports.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <p><span class="title">Front-End Developer</span> | <span class="org">RBS Software Solutions</span>, Philippines</p>
+      <span class="date">2025 - 2026</span>
+    </div>
+    <ul>
+      <li>Developed responsive React.js interfaces with Tailwind CSS and Bootstrap and integrated REST APIs.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row">
+      <p><span class="title">IT Support Staff</span> | <span class="org">Bulacan Agricultural State College, MIS Office</span>, Bulacan, Philippines</p>
+      <span class="date">2025 (2 months)</span>
+    </div>
+    <ul>
+      <li>Troubleshot hardware, software and network issues and created graphic design materials.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+  <p class="proj"><span class="title">ICSMS / PSIR - Property and Supply System</span> | <span class="tech">React, Laravel, MySQL</span> - Property forms, QR stickers, mobile counts.</p>
+  <p class="proj"><span class="title">PMIS - HR Management System</span> | <span class="tech">Laravel, Inertia.js, React, TypeScript</span> - Appointment tracking to salary release.</p>
+  <p class="proj"><span class="title">SDO Bulacan Kiosk</span> | <span class="tech">React, TypeScript, Laravel, Filament</span> - Lobby touchscreen with ARTA-compliant feedback survey.</p>
+  <p class="proj"><span class="title">Procurement System</span> | <span class="tech">React, TypeScript, Laravel, Sanctum</span> - Procurement plans, purchase requests, Google SSO.</p>
+  <p class="proj"><span class="title">SDO Publication</span> | <span class="tech">Python, React, WordPress REST API</span> - Publishes memos with automatic signature redaction.</p>
+  <p class="proj"><span class="title">BESH - Bulacan EduServe Hub</span> | <span class="tech">Microsoft Teams, Power Automate, Lists, Forms</span> - District coaching hub.</p>
+  <p class="proj"><span class="title">Barangay Tibag Management System</span> | <span class="tech">Laravel, Inertia.js, React, PWA</span> - Resident records, certificates, blotter cases.</p>
+  <p class="proj"><span class="title">SIPRA - AI Song-Learning Tool</span> | <span class="tech">Python, FastAPI, PyTorch, React</span> - AI stem separation, chords and tabs.</p>
+  <p class="proj"><span class="title">AILAS - AI Learning Analytics (Capstone)</span> | <span class="tech">FastAPI, React, PostgreSQL, OpenAI API</span> - Flags at-risk students.</p>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <p><b>Languages:</b> PHP, JavaScript, TypeScript, Python, SQL, HTML, CSS</p>
+    <p><b>Frameworks and Libraries:</b> Laravel, React.js, Inertia.js, FastAPI, Filament, Tailwind CSS, Bootstrap, shadcn/ui, Vite</p>
+    <p><b>Databases:</b> MySQL, MariaDB, PostgreSQL, SQLite</p>
+    <p><b>Automation and AI:</b> Power Automate, Microsoft Teams, Forms and Lists, Claude Code, OpenAI API, PyTorch</p>
+    <p><b>Tools and Deployment:</b> Git, GitHub, cPanel, REST APIs, SSL/DNS, Cloudflare Tunnel, PWA, Pest/PHPUnit, Playwright</p>
+  </div>
+
+  <h2>Education</h2>
+  <div class="row">
+    <p><span class="title">Bachelor of Science in Information Technology</span> | <span class="org">Bulacan Agricultural State College</span></p>
+    <span class="date">2021 - 2025</span>
+  </div>
+</body>
+</html>
