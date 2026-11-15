@@ -30,16 +30,16 @@ export const profile = {
 
 export const about = {
   statement:
-    "I build the systems a government office runs on. Since July 2026 I've been the developer in the ICT Unit of DepEd's Schools Division of Bulacan, where I replace Excel workbooks and paper forms with web apps for HR, supply, procurement and the 500+ schools in the division.",
+    "I build web systems that replace spreadsheets, paper forms and manual processes, from production systems for a government office to AI tools of my own.",
   paragraphs: [
-    "I own each system from end to end: I gather requirements with the office that uses it, design the database, build the Laravel API and the React front end, and deploy it to production myself, including the domain, SSL and DNS. Then I keep shipping updates while people are using it, without downtime or lost data.",
+    "Most recently I was a developer in the ICT Unit of DepEd's Schools Division of Bulacan (July to November 2026), where I built six systems for HR, supply, procurement and records and deployed three of them to production. I own projects end to end: requirements, database design, a Laravel or FastAPI back end, a React front end, and deployment with domains, SSL and DNS.",
     "I've grown a lot in the past few months. I went from front-end work in React to full-stack Laravel, PHP 8.4, TypeScript and Python, automated Microsoft 365 workflows with Power Automate, and started building with AI, both as a tool (Claude Code) and inside my products (OpenAI, PyTorch).",
   ],
   stats: [
-    { value: 6, suffix: "", label: "Systems built for SDO Bulacan" },
-    { value: 3, suffix: "", label: "Live on bulacandeped.com.ph" },
-    { value: 515, suffix: "", label: "Schools covered by ICSMS" },
     { value: 11, suffix: "", label: "Projects built" },
+    { value: 3, suffix: "", label: "Systems live in production" },
+    { value: 4, suffix: "", label: "Roles in IT and development" },
+    { value: 2, suffix: "", label: "AI-powered apps" },
   ],
   education: {
     degree: "BS Information Technology",
@@ -66,22 +66,8 @@ export type Project = {
   note?: string;
 };
 
-/** Systems built at DepEd SDO Bulacan (July 2026 – present). Shown in the pinned horizontal gallery. */
+/** Selected work: shown in the pinned horizontal gallery. A mix of government, client and personal projects. */
 export const featured: Project[] = [
-  {
-    id: "kiosk",
-    title: "SDO Bulacan Kiosk",
-    short: "Lobby touchscreen information hub",
-    description:
-      "A 40-inch touchscreen in the SDO Bulacan lobby. Visitors browse the Citizen's Charter, org chart, calendar, news and videos, and rate the office through the government's standard client satisfaction survey (ARTA-compliant). Staff manage everything from a Filament admin panel.",
-    stack: ["React 19", "TypeScript", "Tailwind v4", "Laravel 13", "Filament", "MariaDB"],
-    year: "2026",
-    status: "Deployed on-site",
-    image: shot("kiosk"),
-    mobileImage: shot("kiosk-phone"),
-    frameUrl: "kiosk.sdo-bulacan",
-    note: "Runs on-site in the SDO Bulacan lobby",
-  },
   {
     id: "icsms",
     title: "ICSMS / PSIR",
@@ -97,6 +83,19 @@ export const featured: Project[] = [
     frameUrl: "psir.bulacandeped.com.ph",
   },
   {
+    id: "sipra",
+    title: "SIPRA",
+    short: "AI song-learning helper for guitarists",
+    description:
+      "A personal tool that separates guitar and bass from any song with AI on the GPU, slows down and loops sections without changing pitch, shows notes, chords and tabs in sync, and listens through the mic to check your playing.",
+    stack: ["Python", "FastAPI", "PyTorch (CUDA)", "React", "TypeScript", "Web Audio"],
+    year: "2026",
+    status: "Personal",
+    image: shot("sipra"),
+    frameUrl: "sipra.local",
+    note: "Personal project · runs locally on a GPU laptop",
+  },
+  {
     id: "pmis",
     title: "PMIS — HR Management System v3",
     short: "Appointment tracking from signing to salary",
@@ -110,6 +109,49 @@ export const featured: Project[] = [
     image: shot("pmis"),
     frameUrl: "pmis.bulacandeped.com.ph",
   },
+  {
+    id: "barangay",
+    title: "Barangay Tibag Management System",
+    short: "Mobile-first barangay operations",
+    description:
+      "An installable, mobile-first web app for a barangay: resident profiling with fuzzy duplicate detection, certificate issuance with PDF output, blotter case management, service requests and announcements, behind role-based access and an audit trail.",
+    stack: ["Laravel 13", "Inertia", "React", "Tailwind", "MySQL", "PWA", "Pest"],
+    year: "2026",
+    status: "In progress",
+    image: shot("barangay"),
+    frameUrl: "tibag.barangay.local",
+  },
+  {
+    id: "kiosk",
+    title: "SDO Bulacan Kiosk",
+    short: "Lobby touchscreen information hub",
+    description:
+      "A 40-inch touchscreen in the SDO Bulacan lobby. Visitors browse the Citizen's Charter, org chart, calendar, news and videos, and rate the office through the government's standard client satisfaction survey (ARTA-compliant). Staff manage everything from a Filament admin panel.",
+    stack: ["React 19", "TypeScript", "Tailwind v4", "Laravel 13", "Filament", "MariaDB"],
+    year: "2026",
+    status: "Deployed on-site",
+    image: shot("kiosk"),
+    mobileImage: shot("kiosk-phone"),
+    frameUrl: "kiosk.sdo-bulacan",
+    note: "Runs on-site in the SDO Bulacan lobby",
+  },
+  {
+    id: "ailas",
+    title: "AILAS",
+    short: "AI-assisted learning analytics (capstone)",
+    description:
+      "Helps teachers catch at-risk students early. Teachers upload a syllabus and grades; GPT-4o-mini maps each question to a syllabus competency, a risk model flags struggling students, and dashboards recommend remedial resources. Built for BTECH Baliwag.",
+    stack: ["FastAPI", "React", "TypeScript", "PostgreSQL", "OpenAI", "scikit-learn"],
+    year: "2026",
+    status: "Completed",
+    image: shot("ailas"),
+    frameUrl: "ailas.btech.edu.ph",
+    note: "Capstone project for BTECH Baliwag",
+  },
+];
+
+/** Other projects. Shown in the grid below the gallery. */
+export const projects: Project[] = [
   {
     id: "procurement",
     title: "Procurement System",
@@ -149,43 +191,6 @@ export const featured: Project[] = [
     image: shot("besh"),
     frameUrl: "teams.microsoft.com",
     note: "Private Microsoft Teams workspace for DepEd Bulacan",
-  },
-];
-
-/** Other projects. Shown in the grid below the gallery. */
-export const projects: Project[] = [
-  {
-    id: "barangay",
-    title: "Barangay Tibag Management System",
-    short: "Mobile-first barangay operations",
-    description:
-      "An installable, mobile-first web app for a barangay: resident profiling with fuzzy duplicate detection, certificate issuance with PDF output, blotter case management, service requests and announcements, behind role-based access and an audit trail.",
-    stack: ["Laravel 13", "Inertia", "React", "Tailwind", "MySQL", "PWA", "Pest"],
-    year: "2026",
-    status: "In progress",
-    image: shot("barangay"),
-  },
-  {
-    id: "sipra",
-    title: "SIPRA",
-    short: "AI song-learning helper for guitarists",
-    description:
-      "A personal tool that separates guitar and bass from any song with AI on the GPU, slows down and loops sections without changing pitch, shows notes, chords and tabs in sync, and listens through the mic to check your playing.",
-    stack: ["Python", "FastAPI", "PyTorch (CUDA)", "React", "TypeScript", "Web Audio"],
-    year: "2026",
-    status: "Personal",
-    image: shot("sipra"),
-  },
-  {
-    id: "ailas",
-    title: "AILAS",
-    short: "AI-assisted learning analytics (capstone)",
-    description:
-      "Helps teachers catch at-risk students early. Teachers upload a syllabus and grades; GPT-4o-mini maps each question to a syllabus competency, a risk model flags struggling students, and dashboards recommend remedial resources. Built for BTECH Baliwag.",
-    stack: ["FastAPI", "React", "TypeScript", "PostgreSQL", "OpenAI", "scikit-learn"],
-    year: "2026",
-    status: "Completed",
-    image: shot("ailas"),
   },
   {
     id: "nueva-ecija",
@@ -229,13 +234,11 @@ export const experience: Job[] = [
     title: "Technical Assistant II — Developer",
     company: "DepEd Schools Division of Bulacan · ICT Unit",
     location: "Bulacan, Philippines",
-    period: "Jul 2026 – Present",
-    current: true,
+    period: "Jul – Nov 2026",
     summary:
-      "The developer behind the division's internal systems. I turn manual, Excel-based processes into web applications, from requirements and database design to production deployment, and keep improving them from staff feedback.",
+      "Developer for the division's internal systems. Turned manual, Excel-based processes into web applications, from requirements and database design to production deployment.",
     bullets: [
       "Built and deployed ICSMS/PSIR, PMIS and SDO Publication to bulacandeped.com.ph through cPanel, including domains, SSL and DNS.",
-      "Built the lobby touchscreen kiosk with an ARTA-compliant client satisfaction survey and admin console.",
       "Automated BESH, the division's coaching hub in Microsoft Teams, with Forms, Lists and Power Automate.",
       "Ran QA reviews, wrote user guides and testing scripts, and shipped updates with zero downtime.",
     ],

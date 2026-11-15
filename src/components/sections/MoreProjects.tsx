@@ -98,7 +98,7 @@ export default function MoreProjects() {
             More projects<span className="text-accent">.</span>
           </h2>
           <p className="max-w-sm text-sm leading-relaxed text-ink/60">
-            Freelance, capstone and personal builds, from a barangay system to an AI music tool.
+            More government systems, plus earlier freelance and school projects.
           </p>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:gap-6 xl:grid-cols-3">

@@ -167,10 +167,10 @@ export default function Work() {
         <SectionLabel index="02" title="Selected work" />
         <div className="mt-10 flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <h2 data-work-title className="display max-w-4xl text-[clamp(2.6rem,7vw,7rem)]">
-            Systems I built for <span className="text-gradient">DepEd SDO Bulacan.</span>
+            Things I've <span className="text-gradient">built.</span>
           </h2>
           <p className="max-w-sm text-base leading-relaxed text-ink/60">
-            July 2026 to today: six systems for HR, supply, procurement, records and the division's 31 districts, most of them already live.
+            Production systems for a government office, a barangay app, and AI tools of my own, each built end to end.
           </p>
         </div>
       </div>
